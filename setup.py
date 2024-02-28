@@ -40,7 +40,7 @@ packageName =            "pyVHDLModel"
 packageDirectory =       packageName
 packageInformationFile = Path(f"{packageDirectory}/__init__.py")
 
-setup(**DescribePythonPackageHostedOnGitHub(
+DescribePythonPackageHostedOnGitHub(
 	packageName=packageName,
 	description="An abstract VHDL language model.",
 	gitHubNamespace=gitHubNamespace,
@@ -55,4 +55,4 @@ setup(**DescribePythonPackageHostedOnGitHub(
 	dataFiles={
 		packageName: ["py.typed"]
 	}
-))
+)
